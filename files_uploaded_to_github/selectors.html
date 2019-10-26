@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    h1 {
+        color: blue;
+    }
+    #para1 {
+        color: green;
+    }
+    .para {
+        color: orange;
+    }
+    h2, h3, #para1 {
+        text-decoration: underline;
+    }
+    /* The descendant selector selects element inside another element */
+    div p {
+        font-style: italic;
+    }
+    /* The child selector selects DIRECT CHILD element */
+    blockquote.test>b {
+        color: purple;
+    }
+    </style>
+</head>
+<body>
+    <h1>The main heading</h1>
+    <h2>A sub heading</h2>
+    <h3>A smaller sub heading</h3>
+    <p id="para1">This is paragraph 1</p>
+    <p class="para">This is paragraph 2</p>
+    <p class="para">This is paragraph 3</p>
+    <div>
+        <p>This is a paragraph inside the DIV</p>
+    </div>
+    <blockquote class="test">
+        
+        <b>This is paragraph to test child selector</b>
+    
+    </blockquote>
+</body>
+</html>
